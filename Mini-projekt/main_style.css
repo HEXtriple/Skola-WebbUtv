@@ -2,5 +2,45 @@
     body{
         background-color: whitesmoke;
     }
+}
+@media screen and (min-width: 900px ){
+    body{
+        background-color: whitesmoke;
+    }
+}
+@media screen and (min-width: 1200px ){
+    body{
+        background-color: whitesmoke;
+    }
+}
     
+#branding{
+    text-align: left;
+    padding: 10px;
+}
+
+.top_nav{
+    overflow: hidden;
+    border-color: 333;
+    border-width: 1px;
+    box-shadow: 5px 10px 3px;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px;
+    top: 0;
+}
+.website_nav{
+    float: left;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 30%;
+}
+
+.website_nav:hover{
+    background-color: #ddd;
+    color: black;
 }
