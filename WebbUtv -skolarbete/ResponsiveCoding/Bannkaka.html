@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        }
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 1000px;
+        animation: backgroundraver5000;
+        animation-duration: 2s;
+        }
+        @keyframes backgroundraver5000{
+            from{background-color: aqua;}
+            to{background-color: yellow;}
+        }
+        h1::first-letter{
+            color: bisque;
+        }
+        header{
+            width: 100vw;
+            top:0;
+        }
+        header:hover{
+            transition: border-radius 10s ease-out;
+        }
+        
+        @media screen and (min-width: 300px) {
+        .block{
+            width: 100% !important;
+        }}
+        @media screen and (min-width: 600px) {
+        .block{
+            width: 45% !important;
+        }
+        @media screen and (min-width: 768px) {
+            .block{
+            width: 29% !important;
+        }
+        }
+        @media screen and (min-width: 992px) {
+        .block{
+            width: 29% !important;
+        }
+        }
+        }
+        .block{
+            width: 100vw;
+        }
+        header {
+        background-color: darkslategray;
+        height: 200px;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        }
+
+        .block {
+        height: 10em;
+        background-color: cadetblue;
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        }
+
+        .block-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+      <h1>Rubrik på nivå 1 som är ganska lång</h1>
+      <div class="block-container">
+        <div class="block">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+        <div class="block">4</div>
+        <div class="block">5</div>
+        <div class="block">6</div>
+        <div class="block">7</div>
+        <div class="block">8</div>
+        <div class="block">9</div>
+        <div class="block">10</div>
+        <div class="block">11</div>
+        <div class="block">12</div>
+      </div>
+    </main>
+</body>
+</html>
