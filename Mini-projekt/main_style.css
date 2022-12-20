@@ -23,7 +23,7 @@
     overflow: hidden;
     border-color: 333;
     border-width: 1px;
-    box-shadow: 5px 10px 3px;
+    box-shadow: 5px 10px 3px rgba(114, 9, 0, 0.5);
     border-bottom-left-radius: 30px ;
     border-bottom-right-radius: 30px;
     top: 0;
@@ -37,10 +37,37 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .website_nav:hover{
     background-color: #ddd;
     color: black;
+}
+
+/* Pro bubble tech */
+.bubble{
+    background: white;
+    box-shadow: 5px 10px 3px rgba(84, 9, 0, 0.7);
+    border-top-left-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 25vw;
+    height: 25vh;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about{
+    height: 80vh;
+    border-radius: 10px;
+    background-color:grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    overflow: hidden;
 }
