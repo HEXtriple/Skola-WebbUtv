@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
     body{
         background-color: whitesmoke;
     }
@@ -13,28 +13,98 @@
         background-color: whitesmoke;
     }
 }
-    
+@media screen and (min-width: 1500px ){
+    body{
+        background-color: whitesmoke;
+    }
+}
+@media screen and (min-width: 1800px ){
+    body{
+        background-color: whitesmoke;
+    }
+}
+   
+@font-face{
+    font-family: CookingTitle;
+    font-weight: bold;
+    src: url("Fonts/CookbookTitle.ttf");
+}
+@font-face{
+    font-family: CookingText;
+    font-weight: bold;
+    src: url("Fonts/RecipeFont.ttf");
+}
+
 #branding{
+    display: block;
+    font-family: CookingTitle;
     text-align: left;
+    text-decoration: underline;
+    font-size: 30px;
+
+    margin-left: 5%;
+
+    color: #3c096c;
     padding: 10px;
+}
+#highlight{
+    color: #8F00FF;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-right: 10px;
+}
+
+/* Expanadble menu*/
+#listing{
+    background-color: none;
+    font-family: CookingText;
+    transition: 3s;
+}
+#listing:hover{
+    background-color: whitesmoke;
+    overflow: visible;
+    position: absolute;
+    transition: 3s;
+    
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    width: 10vw;
+    right: 0;
+    height: 35vh;
+    display: inline-block;
+
+    margin-top: 5%;
+    margin-left: 20%;
+    
 }
 
 .top_nav{
+    position: relative;
     color: linear-gradient(#8F00FF, #42008C);
+    max-height: 20vh;
     overflow: hidden;
     border-color: 333;
     border-width: 1px;
-    box-shadow: 5px 6px 7px #8F00FF, 10px 15px 15px #00689A;
+    box-shadow: 5px 6px 7px #240046, 10px 15px 15px #9d4edd;
     border-bottom-left-radius: 30px ;
     border-bottom-right-radius: 30px;
     top: 0;
 }
 .website_nav{
+    position: sticky;
     float: left;
     font-size: 17px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    color: white;
+    font-weight: bold ;
+    color: #e0aaff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -46,8 +116,26 @@
     color: black;
 }
 
+.about{
+    max-width: 20000px;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 80vh;
+    border-radius: 10px;
+
+    background-color: #624A6F;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+}
+
 /* Pro bubble tech */
 .bubble{
+    animation: ease-in dynamicBubble 10s infinite;
+    font-size: 30px;
+    transition: 3s;
     background: white;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7),
                 10px 10px 0px rgba(84, 9, 0, 0.7),
@@ -56,31 +144,45 @@
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
     overflow-x: hidden;
+    overflow-y: hidden;
+
+    width: 35%;
+    height: 35vh;
+    display: inline-block;
+
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+
+.bubble:hover{
+    animation-play-state:paused;
+    transition: 3s;
+    background: #FFF0F0;
+    box-shadow: 15px 15px 2px rgba(0, 0, 0, 0.7),
+                30px 30px 0px rgba(84, 9, 0, 0.7),
+                40px 40px 20px rgba(0, 0, 0, 0.7);
     overflow-y: scroll;
 
     width: 40%;
     height: 40vh;
     display: inline-block;
-    margin-bottom: 5%;
-
-    border-style: double;
-    border-color: black;
-    padding-top: 1px;
-    padding-bottom: 1px;
 }
 
-.about{
-    max-width: 1500px;
-    margin: 0 auto;
-    margin-top: 5%;
-    height: 80vh;
-    border-radius: 10px;
-
-    background-color:grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    overflow: hidden;
+@keyframes dynamicBubble{
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(5px, 30px);
+    }
+    50%{
+        transform: translate(0, 0);
+    }
+    75%{
+        transform: translate(-5px, -30px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
 }
