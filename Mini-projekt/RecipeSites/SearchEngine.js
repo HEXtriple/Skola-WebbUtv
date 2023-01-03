@@ -1,5 +1,5 @@
 // Search bar functionality
-$(document).ready(function () {
+$(Witcher).ready(function () {
   $("#search-input").on("keyup", function () {
     var value = $(this).val().toLowerCase();
     $(".recipe").filter(function () {
@@ -9,7 +9,7 @@ $(document).ready(function () {
 });
 
 // Sorting functionality
-$(document).ready(function () {
+$(Witcher).ready(function () {
   $("#sort-select").change(function () {
     var value = $(this).val();
     if (value == "name-asc") {
@@ -32,7 +32,7 @@ $(document).ready(function () {
 });
 
 // Favorites functionality
-$(document).ready(function () {
+$(Witcher).ready(function () {
   $(".favorite-button").click(function () {
     var recipe = $(this).parent(".recipe");
     $(recipe).clone().appendTo(".favorite-container");
@@ -40,7 +40,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(Witcher).ready(function () {
   $("#search-input").on("keyup", function () {
     var value = $(this).val().toLowerCase();
     $(".recipe").filter(function () {

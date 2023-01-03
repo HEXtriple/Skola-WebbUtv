@@ -1,133 +1,24 @@
-@media screen and (min-width: 600px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
-@media screen and (min-width: 900px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
-@media screen and (min-width: 1500px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
-@media screen and (min-width: 1800px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
-
-body{
-  overflow-y:show;
-
-}
-
-@font-face {
-  font-family: CookingTitle;
-  font-weight: bold;
-  src: url("Fonts/CookbookTitle.ttf");
-}
-@font-face {
-  font-family: CookingText;
-  font-weight: bold;
-  src: url("Fonts/RecipeFont.ttf");
-}
-
 @font-face{
   font-family: AboutFont;
   font-weight: initial;
   src: url("Fonts/AboutFont.ttf");
 }
 
-#branding {
-  font-family: CookingTitle;
-  text-align: left;
-  text-decoration: underline;
-  font-size: 2rem;
-
-  margin-left: 5%;
-
-  color: #3c096c;
-  padding: 10px;
-}
-
-/* Expanadble menu*/
-#listing {
-  background-color: none;
-  font-family: CookingText;
-  transition: 3s;
-}
-#listing:hover {
-  background-color: whitesmoke;
-  overflow: visible;
-  position: absolute;
-  transition: 3s;
-
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-
-  width: 10vw;
-  right: 0;
-  height: 35vh;
-  display: inline-block;
-
-  margin-top: 5%;
-  margin-left: 20%;
-}
-
-.top_nav {
-  position: relative sticky;
-  color: linear-gradient(#8f00ff, #42008c);
-  max-height: 20vh;
-  overflow: hidden;
-  border-color: 333;
-  border-width: 1px;
-  box-shadow: 5px 6px 7px #240046, 10px 15px 15px #9d4edd;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  top: 0;
-}
-.website_nav {
-  float: left;
-  font-size: 17px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
-  color: #e0aaff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin-left: 20%;
-}
-
-.website_nav:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .about {
   font-family: AboutFont;
   max-width: 20000px;
-  margin: 0 auto;
+  margin: 2px ;
   margin-top: 5%;
   height: 80vh;
   border-radius: 10px;
 
   background-color: #624a6f;
-  display: line;
+  display: block;
   position: absolute;
   
 
   align-content: center;
+  justify-content: center;
 
   overflow: hidden;
 }
