@@ -4,6 +4,13 @@
   src: url("Fonts/AboutFont.ttf");
 }
 
+#about{
+  margin-top: 7%;
+  margin-left: 2%;
+  position: absolute;
+  font-family: AboutFont;
+}
+
 .about {
   font-family: AboutFont;
   max-width: 20000px;
@@ -17,11 +24,13 @@
   border-color: 10px 10px 0px rgba(84, 9, 0, 0.7);
   border-left: none;
   border-right: none;
-  display: block;
-  position: absolute;
   
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
 
-  align-content: center;
+
+  align-items: center;
   justify-content: center;
 
   overflow: hidden;
@@ -44,10 +53,10 @@
 
   width: 30%;
   height: 35vh;
-  display: inline-block;
+  display: block;
 
   margin-top: 5%;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .bubble:hover {
