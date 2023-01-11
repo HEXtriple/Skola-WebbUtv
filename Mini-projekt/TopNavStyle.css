@@ -92,10 +92,6 @@ a {
   transition: 3s;
   background-color: none;
   overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
 
   position: absolute;
 
@@ -115,11 +111,16 @@ a {
 
   box-shadow: 2px 2px 2px #540900, 10px 10px 20px #ff4747;
 
-  width: 8vw;
-  height: 14vh;
+  width: 14vw;
+  height: 18vh;
 }
 
 .listing-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  
   font-family: CookingText;
   font-size: 2em;
   margin-top: 10px;
@@ -127,7 +128,7 @@ a {
 
 .top-nav {
   background-color: #e2dddd;
-  position: relative sticky;
+  position: relative fixed top;
   color: linear-gradient(#8f00ff, #42008c);
   max-height: 20vh;
   overflow: hidden;
@@ -139,24 +140,22 @@ a {
   top: 0%;
 }
 .website-nav {
+  display: block;
   transition: 6s;
   float: left;
-  font-size: 17px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #d72323;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-  border-top-style: groove;
+  text-decoration:underline;
   margin-left: 20%;
 }
 
 .website-nav:hover {
   transition: 2s;
   background-color: rgba(84, 9, 0, 0.4);
-  color: black;
 }
 
 .website-nav:active {

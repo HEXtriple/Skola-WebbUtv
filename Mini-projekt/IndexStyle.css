@@ -41,9 +41,8 @@
 .about {
   font-family: AboutFont;
   max-width: 20000px;
-  margin: 2px;
   margin-top: 5%;
-  height: 2000px;
+  height: 1800px;
 
   border-radius: 40px;
   border-style: double;
@@ -69,8 +68,7 @@
   font-size: 30px;
   transition: 3s;
   background: white;
-  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7), 10px 10px 0px rgba(84, 9, 0, 0.7),
-    15px 15px 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7), 10px 10px 0px rgba(84, 9, 0, 0.7),15px 15px 4px rgba(0, 0, 0, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;

@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient( to left, rgba(255, 0, 0, 0.7), rgba(128, 18, 18, 0.7));
+    overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  }
+  @media screen and (max-width: 900px) {
+    body {
+      overflow: scroll;
+    }
+    }
+  
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+h1{
+    margin-bottom: -2%;
+}
+
+ul{
+    color:ghostwhite;
+    list-style-type:square;
+
+    overflow: hidden;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+}
+
+li{
+    font-family: cookingtitle ;
+    font-size: 2em;
+
+    border-style: outset;
+    border-radius: 50px;
+    margin-top: 4%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+p{
+    border-bottom: 2px solid black;
+    font-family: cookingtext;
+    font-size: 1.8em;
+}
