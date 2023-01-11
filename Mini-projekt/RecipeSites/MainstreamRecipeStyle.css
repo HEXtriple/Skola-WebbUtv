@@ -20,6 +20,7 @@ h1 {
 }
 
 img#recipe {
+
   border-radius: 15px;
   width: 50%;
   height: 50%;
@@ -27,6 +28,7 @@ img#recipe {
 }
 
 .recipe-container {
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -40,18 +42,49 @@ img#recipe {
   overflow: hidden;
 }
 
+#doom-recipe-container{
+  flex-direction: column;
+}
+
+#doom-recipe{
+  max-width: 47%;
+}
+.recipe-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.recipe-container2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .recipe {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
   display: block;
   position: relative;
   flex-direction: row;
-  width: 30%;
-  height: 60vh;
+  max-width: 30%;
+  max-height: 120vh;
   margin: 1em;
   border: 1px solid #ccc;
   border-radius: 50px;
   background-color:aliceblue;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.recipe::-webkit-scrollbar {
+  display: none;
 }
 
 .recipe h2 {
