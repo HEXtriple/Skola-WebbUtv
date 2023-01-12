@@ -1,26 +1,25 @@
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .about {
-    height: 2000px;
-  }
-  .bubble {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 900px) {
   .about {
-    height: 2000px;
-  }
-  .bubble {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
+  .about {
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 1500px) {
 }
 @media screen and (min-width: 1800px) {
 }
-
+body{
+  height: auto;
+}
 @font-face {
   font-family: AboutFont;
   font-weight: initial;
@@ -40,9 +39,9 @@
 
 .about {
   font-family: AboutFont;
-  max-width: 20000px;
+  width: 100%;
   margin-top: 5%;
-  height: 1800px;
+  height: 70vh;
 
   border-radius: 40px;
   border-style: double;
@@ -52,8 +51,9 @@
   border-right: none;
 
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+
+  position: fixed relative;
 
   align-items: center;
   justify-content: center;
@@ -63,10 +63,13 @@
 
 /* Pro bubble tech */
 .bubble {
+  transition: 3s;
+  display: block;
+
   text-align: center;
   animation: ease-in dynamicBubble 10s infinite;
-  font-size: 30px;
-  transition: 3s;
+  font-size: 1.5em;
+  
   background: white;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7), 10px 10px 0px rgba(84, 9, 0, 0.7),15px 15px 4px rgba(0, 0, 0, 0.7);
   border-top-left-radius: 20px;
@@ -76,7 +79,7 @@
   overflow-y: hidden;
 
   width: 30%;
-  height: 35vh;
+  height: 30%;
   display: block;
 
   margin-top: 5%;
@@ -87,16 +90,16 @@
   animation-play-state: paused;
   transition: 3s;
   background: #fff0f0;
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7),
-    30px 30px 0px rgba(84, 9, 0, 0.7), 40px 40px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7), 30px 30px 0px rgba(84, 9, 0, 0.7), 40px 40px 20px rgba(0, 0, 0, 0.7);
   overflow-y: scroll;
 
   width: 50%;
-  height: 60vh;
-  display: inline-block;
+  height: 30%;
+  
 }
 
 footer.ARS {
+  bottom: 0;
   margin-left: 10%;
   margin-top: 3%;
   width: 80vw;
