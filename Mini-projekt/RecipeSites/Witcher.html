@@ -7,8 +7,41 @@
     <link rel="stylesheet" href="../TopNavStyle.css" />
     <link rel="icon" type="image/icon-x" href="../Icons/WitcherIco.png" />
 
-    <script src="SearchEngine.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      // Search bar functionality
+      $(Witcher).ready(function () {
+        $("#search-input").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $(".recipe").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+
+      // Sorting functionality
+      $(Witcher).ready(function () {
+        $("#sort-select").change(function () {
+          var value = $(this).val();
+          if (value == "name-asc") {
+            $(".recipe").sort(sortByNameAsc).appendTo(".recipe-container");
+          } else if (value == "name-desc") {
+            $(".recipe").sort(sortByNameDesc).appendTo(".recipe-container");
+          }
+          // Add additional sort options here
+        });
+
+        function sortByNameAsc(a, b) {
+          return $(a).find("h2").text() > $(b).find("h2").text();
+        }
+
+        function sortByNameDesc(a, b) {
+          return $(a).find("h2").text() < $(b).find("h2").text();
+        }
+      });
+    </script>
+    
 
     <!--Google icons-->
     <link
@@ -52,9 +85,8 @@
         </ul>
       </nav>
     </header>
-
-    <input type="text" id="search-input" placeholder="Recipe-Lookup5000" />
     <h1>Witcher 3 Recipes</h1>
+    <input type="text" id="search-input" placeholder="Recipe-Lookup5000" />
     <nav class="recipe-container">
       <div class="recipe">
         <img
@@ -69,7 +101,6 @@
           <li>1x Dwarven Spirit</li>
           <li>1x Cherry Cordial</li>
         </ul>
-        <button class="favorite-button">Add to Favorites</button>
       </div>
       <div class="recipe">
         <img
@@ -84,7 +115,6 @@
           <li>1x Dwarven Spirit</li>
           <li>1x White Gull</li>
         </ul>
-        <button class="favorite-button">Add to Favorites</button>
       </div>
       <div class="recipe">
         <img
@@ -100,12 +130,7 @@
           <li>1x Cherry Cordial</li>
           <li>1x White Gull</li>
         </ul>
-        <button class="favorite-button">Add to Favorites</button>
       </div>
     </nav>
-
-    <!-- additional recipe elements will be added here -->
-    <h2>Favorites</h2>
-    <div class="favorite-container"></div>
   </body>
 </html>
