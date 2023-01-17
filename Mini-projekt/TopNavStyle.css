@@ -53,7 +53,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #E63946;
+  background-color: #1D3557;
   background-image: -webkit-linear-gradient(
     30deg,
     rgb(0, 0, 0) 30%,
@@ -139,14 +139,13 @@ h1.title {
   
   background-color: #F1FAEE;
   position: relative fixed;
-  color: linear-gradient(#8f00ff, #42008c);
   
   width: 100vw;
   height: 35vh;
   overflow: hidden;
 
   border-width: 1px;
-  box-shadow: 5px 6px 7px #E63946, 10px 15px 15px #540900;
+  box-shadow: 5px 6px 7px #A8DADC, 10px 15px 15px #1D3557;
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 46px;
   
@@ -192,8 +191,4 @@ nav.website-nav-container{
   padding:1vw;
 }
 
-/* #hover:current {
-  background-color: #F1FAEE;
-  
-} */
 

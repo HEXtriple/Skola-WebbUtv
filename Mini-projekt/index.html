@@ -140,8 +140,29 @@
       </div>
       
     </article>
-    <footer class="ARS">
-      <p>Hexeger official Website all rights reserved</p>
+    <h1 class="title">___Complaints Form___</h1>
+    <footer class="complaint-page">
+      <p>
+        If you have any complaints about our food leading to death, <br> please contact us at <br>
+        <a href="mailto:work@trihex.tk"><span class="material-symbols-rounded">email</span></a>
+        <br>
+        or send a form
+      </p>
+      
+      <form action="sendComplaint" method="post" class="index-form">
+        <div id="index-form-left">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="email" class="material-symbols-rounded">email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div id="index-form-right">
+          <label for="complaint">Complaint</label>
+          <textarea name="complaint" id="complaint" cols="30" rows="10"></textarea>
+          <input type="submit" value="Submit" />
+      </div>
+      </form>
+        
     </footer>
   </body>
 </html>
