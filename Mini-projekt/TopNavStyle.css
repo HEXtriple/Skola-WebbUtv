@@ -2,10 +2,6 @@
   body::-webkit-scrollbar{
     display: none;
   }
-  #branding{
-    font-size: 1em;
-  }
-  
   .listing-container{
     display: block;
     width: 25vw;
@@ -34,21 +30,16 @@
   }
   .listing-container:hover {
     transition: 3s;
+    background-color: rgba(168, 218, 220, 0.3);
 
-    width: 15vw;
-    height: 10vw;
+    width: 20vw;
+    height: 15vw;
   
     border-radius: 30px;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: rgba(255, 255, 255, 1);
   
     box-shadow: 2px 2px 2px #540900, 10px 10px 20px #ff4747;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #branding{
-    font-size: 2em;
   }
 }
 
@@ -119,7 +110,7 @@ a {
   text-decoration: underline;
   
   color: #1D3557;
-  font-size: 2.3em;
+  font-size: 2em;
 }
 
 h1.title {
@@ -186,15 +177,23 @@ nav.website-nav-container{
   text-decoration:underline;
 }
 
-
-#hover:hover {
-  transition: 2s;
-  background-color: rgba(164, 19, 60, 0.3);
+#hover {
+  transition: 1s;
 }
-
-#hover:active::after {
-  background-color: #ff4747;
+#hover:hover {
+  transition: 1s;
+  background-color: #F1FAEE;
   border-left-style: double;
   border-right-style: double;
+
+  border-radius: 90px;
+  border-color: black;
+  border-width: 1vw;
+  padding:1vw;
 }
+
+/* #hover:current {
+  background-color: #F1FAEE;
+  
+} */
 

@@ -48,13 +48,11 @@
   height: auto;
 
   border-radius: 40px;
-  border-style: double;
-  border-width: 4px;
-  border-color: 10px 10px 0px rgba(84, 9, 0, 0.7);
+  border-style: solid;
+  border-width: 1vw;
   border-left: none;
   border-right: none;
-
-  background-color: #457B9D;
+  background-color: rgba(29, 53, 87, 0.6);
 
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +87,6 @@
 .bubble:hover {
   animation-play-state: paused;
   transition: 3s;
-  background: #fff0f0;
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7), 30px 30px 0px rgba(29, 53, 87, 0.7), 40px 40px 20px rgba(0, 0, 0, 0.7);
   overflow-y: scroll;
 

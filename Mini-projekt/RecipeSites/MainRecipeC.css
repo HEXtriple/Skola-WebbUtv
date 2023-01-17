@@ -56,10 +56,6 @@
   src: url("../Fonts/RecipeFont.ttf");
 }
 
-body#DOOM {
-  background-color: rgba(355, 75, 90, 0.7);
-}
-
 
 nav.recipe-container {
   display: flex;
@@ -68,9 +64,13 @@ nav.recipe-container {
   align-items: center;
   width: 100vw;
 
-  border-radius: 25px;
-  border-style: initial;
-  background-color: #457B9D;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 1vw;
+  border-left: none;
+  border-right: none;
+
+  background-color: rgba(29, 53, 87, 0.6);
   overflow: hidden;
 }
 
