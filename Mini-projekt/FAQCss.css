@@ -1,8 +1,10 @@
 body {
   background: linear-gradient(
     to left,
-    rgba(255, 0, 0, 0.5),
-    rgba(128, 18, 18, 0.3)
+    rgba(255, 240, 243, 1)5%,
+    rgba(255, 117, 143, 0.7)20%,
+    rgba(164, 19, 60, 0.7)50%
+
   );
   overflow: scroll;
 }

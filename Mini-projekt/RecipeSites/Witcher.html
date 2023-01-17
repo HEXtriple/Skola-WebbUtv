@@ -9,40 +9,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script>
-      // Search bar functionality
-      $(Witcher).ready(function () {
-        $("#search-input").on("keyup", function () {
-          var value = $(this).val().toLowerCase();
-          $(".recipe").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-          });
-        });
-      });
-
-      // Sorting functionality
-      $(Witcher).ready(function () {
-        $("#sort-select").change(function () {
-          var value = $(this).val();
-          if (value == "name-asc") {
-            $(".recipe").sort(sortByNameAsc).appendTo(".recipe-container");
-          } else if (value == "name-desc") {
-            $(".recipe").sort(sortByNameDesc).appendTo(".recipe-container");
-          }
-          // Add additional sort options here
-        });
-
-        function sortByNameAsc(a, b) {
-          return $(a).find("h2").text() > $(b).find("h2").text();
-        }
-
-        function sortByNameDesc(a, b) {
-          return $(a).find("h2").text() < $(b).find("h2").text();
-        }
-      });
-    </script>
-    
-
     <!--Google icons-->
     <link
       rel="stylesheet"
@@ -86,11 +52,10 @@
       </nav>
     </header>
     <h1>Witcher 3 Recipes</h1>
-    <input type="text" id="search-input" placeholder="Recipe-Lookup5000" />
     <nav class="recipe-container">
       <div class="recipe">
         <img
-          id="recipe"
+          id="witcher"
           src="../Images/WitcherCooking3.png"
           alt="Witcher Cooking"
           title="Cook like Geralt himself!"
@@ -104,7 +69,7 @@
       </div>
       <div class="recipe">
         <img
-          id="recipe"
+          id="witcher"
           src="../Images/WitcherCooking1.png"
           alt="Witcher Cooking"
           title="Cook like Geralt himself!"
@@ -118,7 +83,7 @@
       </div>
       <div class="recipe">
         <img
-          id="recipe"
+          id="witcher"
           src="../Images/WitcherCooking2.png"
           alt="Witcher Cooking"
           title="Cook like Geralt himself!"
