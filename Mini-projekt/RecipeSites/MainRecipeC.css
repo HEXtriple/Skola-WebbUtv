@@ -1,13 +1,12 @@
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) {
   nav.recipe-container{
     flex-direction: column;
-    max-height: 2000px;
   }
   .recipe{
     width: 100vw;
-    height: 100vw;
+    height: 150vw;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
   }
   img{
     border-radius: 15px;
@@ -20,7 +19,6 @@
 @media screen and (min-width: 900px) {
   nav.recipe-container{
     flex-direction: column;
-    max-height: 2000px;
   }
   .recipe{
     width: 50vw;
@@ -46,7 +44,7 @@
   .recipe{
     margin-left: 5vw;
 
-    width: 35vw;
+    width: 40vw;
     height: 40vw;
   }
 }
@@ -59,37 +57,23 @@
 }
 
 body#DOOM {
-  background-color: #5d0000;
-}
-
-h1 {
-  color: black;
-  text-align: center;
-  font-size: 2em;
-}
-
-h1.recipe-container{
-  color : white;
+  background-color: rgba(355, 75, 90, 0.7);
 }
 
 
 nav.recipe-container {
-  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
+  width: 100vw;
 
   border-radius: 25px;
   border-style: initial;
-  background-color: grey;
+  background-color: #457B9D;
   overflow: hidden;
 }
 
-#doom-recipe-container {
-  flex-direction: column;
-}
 .recipe-container1 {
   display: flex;
   flex-wrap: wrap;
@@ -138,6 +122,6 @@ nav.recipe-container {
 .recipe li {
   font-size: 1.5em;
   margin: 1em;
-  word-spacing: 5px;
-  letter-spacing: 1px;
+  word-spacing: 1px;
+  letter-spacing: -1px;
 }

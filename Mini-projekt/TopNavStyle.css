@@ -1,72 +1,47 @@
-@media screen and (min-width: 400px) {
-  #branding{
-    font-size: 1.5em;
-    
-  }
+@media screen and (min-width: 300) {
   body::-webkit-scrollbar{
     display: none;
   }
-  .top-nav{
-    height: 17vw;
-  }
-  .website-nav{
-    margin-top: 5vw;
-    margin-left: 10vw;
+  #branding{
     font-size: 1em;
   }
   
   .listing-container{
+    display: block;
     width: 25vw;
-    height: 17%;
-    margin-left: -6%;
+    height: 25vw;
     list-style-type: circle;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
 
     border-radius: 30px;
     overflow-x: hidden;
     overflow-y: hidden;
 
-    position: absolute;
-
     z-index: 1;
-
   }
 }
 @media screen and (min-width: 900px) {
-  .top-nav{
-
-    height: 8vw;
-  }
-  #branding{
-    font-size: 1.5em;
-  }
-  .website-nav {
-    margin-top: 3vw;
-    margin-left: 20vw;
-    font-size: 1.5em;
-  }
   .listing-container{
-    height: 1.5vw;
+    height: 2.5vw;
     width: 3vw;
     transition: 3s;
-    background-color: none;
-    overflow: hidden;
-
     position: absolute;
+
+    overflow: hidden;
 
     z-index: 1;
   }
   .listing-container:hover {
     transition: 3s;
 
-    width: 13vw;
-    height: 13vw;
-    list-style-type: circle;
-    background-color: rgba(255, 255, 255, 0.9);
+    width: 15vw;
+    height: 10vw;
   
     border-radius: 30px;
     overflow-x: hidden;
     overflow-y: hidden;
+    background-color: rgba(255, 255, 255, 1);
   
     box-shadow: 2px 2px 2px #540900, 10px 10px 20px #ff4747;
   }
@@ -78,18 +53,18 @@
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(51, 2, 2, 0.519);
+  -webkit-box-shadow: inset 0 0 6px rgba(29, 53, 87, 0.519);
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #ffeaea;
+  background-color: #F1FAEE;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #540900;
+  background-color: #E63946;
   background-image: -webkit-linear-gradient(
-    45deg,
+    30deg,
     rgb(0, 0, 0) 30%,
     transparent 30%,
     transparent 60%,
@@ -101,8 +76,13 @@
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span.material-symbols-rounded{
+  text-decoration: underline;
 }
 
 body {
@@ -121,20 +101,32 @@ body {
   src: url("Fonts/RecipeFont.ttf");
 }
 
+@font-face {
+  font-family: AboutFont;
+  font-weight: initial;
+  src: url("Fonts/AboutFont.ttf");
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
 #branding {
-  position:absolute;
+  position:relative;
   font-family: CookingTitle;
-  text-align: left;
+  text-align: center;
   text-decoration: underline;
   
-  margin-left: 5%;
+  color: #1D3557;
+  font-size: 2.3em;
+}
 
-  color: #7c0d00;
+h1.title {
+  margin: 5vw;
+  text-align: center;
+  position: relative fixed;
+  font-family: AboutFont;
 }
 
 
@@ -146,42 +138,58 @@ a {
   align-items: center;
   
   font-family: CookingText;
-  font-size: 2em;
-  margin-top: 10px;
+  font-size: 4vw;
 }
 
 .top-nav {
-  background-color: #e2dddd;
+  top:0;
+  margin-bottom: 5vw;
+
+  
+  background-color: #F1FAEE;
   position: relative fixed;
   color: linear-gradient(#8f00ff, #42008c);
   
   width: 100vw;
+  height: 35vh;
   overflow: hidden;
+
   border-width: 1px;
-  box-shadow: 5px 6px 7px #ff4747, 10px 15px 15px #540900;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  top:0%;
+  box-shadow: 5px 6px 7px #E63946, 10px 15px 15px #540900;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 46px;
+  
 
   display: flex;
-  justify-content:flex-start;
-  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
 
 }
+
+nav.website-nav-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .website-nav {
-  display: block;
+  font-size: 2rem;
+  display: inline;
+  margin: 4vw;
   transition: 6s;
-  float: left;
-  font-family: Arial, Helvetica, sans-serif;
+  float:left;
   font-weight: bold;
-  color: #d72323;
+  color: #A8DADC;
   text-align: center;
   text-decoration:underline;
 }
 
+
 #hover:hover {
   transition: 2s;
-  background-color: rgba(84, 9, 0, 0.3);
+  background-color: rgba(164, 19, 60, 0.3);
 }
 
 #hover:active::after {
