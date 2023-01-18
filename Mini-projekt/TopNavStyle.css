@@ -11,8 +11,7 @@
     position: absolute;
 
     border-radius: 30px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 
     z-index: 1;
   }
@@ -98,10 +97,7 @@ body {
   src: url("Fonts/AboutFont.ttf");
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+
 
 #branding {
   position: relative;
@@ -120,16 +116,6 @@ h1.title {
   font-family: AboutFont;
 }
 
-.listing-item {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-
-  font-family: CookingText;
-  font-size: 4vw;
-}
-
 .top-nav {
   top: 0;
   margin-bottom: 5vw;
@@ -145,53 +131,46 @@ h1.title {
   box-shadow: 5px 6px 7px #a8dadc, 10px 15px 15px #1d3557;
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 46px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-nav.website-nav-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 .website-nav {
   font-size: 2rem;
-  display: inline;
+  display: block;
   margin: 4vw;
-  transition: 6s;
   float: left;
-  font-weight: bold;
-  color: #a8dadc;
+  
   text-align: center;
   text-decoration: underline;
 }
 
-#hover {
-  transition: 1s;
+.website-nav a{
+  color: #a8dadc;
+  font-weight: bold;
 }
-#hover:hover {
-  transition: 1s;
-  background-color: #f1faee;
-  border-left-style: double;
-  border-right-style: double;
 
+.website-nav a:hover{
+  transition: 1s;
   border-radius: 90px;
   border-color: black;
   border-width: 1vw;
-  padding: 1vw;
+  padding: 0.5vw;
+  margin: -0.5vw;
+
+  border-left-style: double;
+  border-right-style: double;
+}
+
+.listing-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: CookingText;
+  font-size: 3vw;
 }
 
 article.main-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
   width: 100vw;
 
   border-radius: 40px;
@@ -203,4 +182,28 @@ article.main-container {
   background-color: rgba(29, 53, 87, 0.6);
   overflow: hidden;
   position: relative;
+}
+
+.flexbox-center-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.flexbox-center-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.display-block-center {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

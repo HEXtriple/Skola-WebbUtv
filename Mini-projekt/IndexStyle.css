@@ -2,7 +2,7 @@
   .bubble {
     overflow-y: scroll;
     width: 100vw;
-    height: 100vw;
+    height: auto;
     margin-bottom: 5vw;
   }
   .bubble::-webkit-scrollbar{
@@ -33,28 +33,26 @@
   }
 }
 
-#about-img {
-  overflow: hidden;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 }
 
 /* Pro bubble tech */
 .bubble {
   transition: 3s;
   display: inline;
-
   text-align: center;
 
   font-size: 1.5em;
   font-family: AboutFont;
 
-  background: white;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7),
     10px 10px 0px rgba(29, 53, 87, 0.7), 15px 15px 4px rgba(0, 0, 0, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-
-  display: inline;
 }
 
 .bubble:hover {
@@ -70,12 +68,7 @@ footer.complaint-page {
   font-size: 1.5em;
   text-align: center;
 
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  border-style: hidden;
+  border-style: solid;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 
@@ -90,38 +83,22 @@ footer.complaint-page {
   );
 }
 
-form.index-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-div#index-form-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+div#index-form-left, div#index-form-right {
   margin: 5vw;
 }
 
-div#index-form-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5vw;
-}
 .write {
   height: 5vh;
   width: 20vw;
+
   border-radius: 90px;
   border-style: solid;
   border-left-style: none;
   border-right-style: none;
+  border-width: 0.5vh;
 
   padding: 2vw;
-  border-width: 0.5vh;
+  
 }
 
 textarea.write {
