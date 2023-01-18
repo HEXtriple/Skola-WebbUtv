@@ -47,12 +47,12 @@
     </header>
 
     <h1 class="title">About</h1>
-    <article class="about">
+    <article class="main-container">
       <div class="bubble" id="about-img">
         <img
           src="Images/WitcherCooking1.png"
           width="100%"
-          height="120%"
+          height="100%"
           title="Loke"
         />
       </div>
@@ -134,7 +134,7 @@
         <img
           src="Images/DoomImg3.png"
           width="100%"
-          height="120%"
+          height="100%"
           title="Loke"
         />
       </div>
@@ -146,19 +146,19 @@
         If you have any complaints about our food leading to death, <br> please contact us at <br>
         <a href="mailto:work@trihex.tk"><span class="material-symbols-rounded">email</span></a>
         <br>
-        or send a form
+        Or Send In<br>A Form
       </p>
       
       <form action="sendComplaint" method="post" class="index-form">
         <div id="index-form-left">
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" placeholder="Ex. John Doe" class="write"/>
           <label for="email" class="material-symbols-rounded">email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" placeholder="example@domain.com" class="write"/>
         </div>
         <div id="index-form-right">
           <label for="complaint">Complaint</label>
-          <textarea name="complaint" id="complaint" cols="30" rows="10"></textarea>
+          <textarea name="complaint" id="complaint" cols="30" rows="10" placeholder="Greatest Recipe Site EVER!" class="write"></textarea>
           <input type="submit" value="Submit" />
       </div>
       </form>

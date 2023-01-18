@@ -1,8 +1,8 @@
 @media screen and (min-width: 300) {
-  body::-webkit-scrollbar{
+  body::-webkit-scrollbar {
     display: none;
   }
-  .listing-container{
+  .listing-container {
     display: block;
     width: 25vw;
     height: 25vw;
@@ -18,7 +18,7 @@
   }
 }
 @media screen and (min-width: 900px) {
-  .listing-container{
+  .listing-container {
     height: 2.5vw;
     width: 3vw;
     transition: 3s;
@@ -34,12 +34,12 @@
 
     width: 20vw;
     height: 15vw;
-  
+
     border-radius: 30px;
     overflow-x: hidden;
     overflow-y: hidden;
-  
-    box-shadow: 2px 2px 2px #540900, 10px 10px 20px #ff4747;
+
+    box-shadow: 2px 2px 2px #1d3557, 10px 10px 20px #a8dadc;
   }
 }
 
@@ -49,11 +49,11 @@
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #F1FAEE;
+  background-color: #f1faee;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1D3557;
+  background-color: #1d3557;
   background-image: -webkit-linear-gradient(
     30deg,
     rgb(0, 0, 0) 30%,
@@ -72,7 +72,7 @@
   box-sizing: border-box;
 }
 
-span.material-symbols-rounded{
+span.material-symbols-rounded {
   text-decoration: underline;
 }
 
@@ -104,12 +104,12 @@ a {
 }
 
 #branding {
-  position:relative;
+  position: relative;
   font-family: CookingTitle;
   text-align: center;
   text-decoration: underline;
-  
-  color: #1D3557;
+
+  color: #1d3557;
   font-size: 2em;
 }
 
@@ -120,44 +120,39 @@ h1.title {
   font-family: AboutFont;
 }
 
-
-
 .listing-item {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  
+
   font-family: CookingText;
   font-size: 4vw;
 }
 
 .top-nav {
-  top:0;
+  top: 0;
   margin-bottom: 5vw;
 
-  
-  background-color: #F1FAEE;
+  background-color: #f1faee;
   position: relative fixed;
-  
+
   width: 100vw;
-  height: 35vh;
+  height: 30vh;
   overflow: hidden;
 
   border-width: 1px;
-  box-shadow: 5px 6px 7px #A8DADC, 10px 15px 15px #1D3557;
+  box-shadow: 5px 6px 7px #a8dadc, 10px 15px 15px #1d3557;
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 46px;
-  
 
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
-nav.website-nav-container{
+nav.website-nav-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -169,11 +164,11 @@ nav.website-nav-container{
   display: inline;
   margin: 4vw;
   transition: 6s;
-  float:left;
+  float: left;
   font-weight: bold;
-  color: #A8DADC;
+  color: #a8dadc;
   text-align: center;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 #hover {
@@ -181,14 +176,31 @@ nav.website-nav-container{
 }
 #hover:hover {
   transition: 1s;
-  background-color: #F1FAEE;
+  background-color: #f1faee;
   border-left-style: double;
   border-right-style: double;
 
   border-radius: 90px;
   border-color: black;
   border-width: 1vw;
-  padding:1vw;
+  padding: 1vw;
 }
 
+article.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
 
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 1vw;
+  border-left: none;
+  border-right: none;
+
+  background-color: rgba(29, 53, 87, 0.6);
+  overflow: hidden;
+  position: relative;
+}

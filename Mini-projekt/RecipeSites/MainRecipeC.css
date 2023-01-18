@@ -1,14 +1,11 @@
 @media screen and (min-width: 300px) {
-  nav.recipe-container{
-    flex-direction: column;
-  }
-  .recipe{
+  .recipe {
     width: 100vw;
     height: 150vw;
     overflow-y: scroll;
     overflow-x: scroll;
   }
-  img{
+  img {
     border-radius: 15px;
     width: 100%;
     height: 70vw;
@@ -17,31 +14,23 @@
 }
 
 @media screen and (min-width: 900px) {
-  nav.recipe-container{
-    flex-direction: column;
-  }
-  .recipe{
+  .recipe {
     width: 50vw;
     height: 50vw;
     overflow-y: scroll;
     overflow-x: hidden;
   }
 
-  img{
+  img {
     border-radius: 15px;
     width: 100%;
     height: 60%;
     object-fit: cover;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
-  nav.recipe-container{
-    flex-direction: row;
-  }
-
-  .recipe{
+  .recipe {
     margin-left: 5vw;
 
     width: 40vw;
@@ -54,24 +43,6 @@
   font-weight: bold;
   font-size: 3em;
   src: url("../Fonts/RecipeFont.ttf");
-}
-
-
-nav.recipe-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-
-  border-radius: 40px;
-  border-style: solid;
-  border-width: 1vw;
-  border-left: none;
-  border-right: none;
-
-  background-color: rgba(29, 53, 87, 0.6);
-  overflow: hidden;
 }
 
 .recipe-container1 {
@@ -123,5 +94,9 @@ nav.recipe-container {
   font-size: 1.5em;
   margin: 1em;
   word-spacing: 1px;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-family: AboutFont;
 }
