@@ -47,6 +47,7 @@ img {
 
   font-size: 1.5em;
   font-family: AboutFont;
+  background-color: white;
 
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7),
     10px 10px 0px rgba(29, 53, 87, 0.7), 15px 15px 4px rgba(0, 0, 0, 0.7);
